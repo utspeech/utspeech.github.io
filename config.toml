@@ -1,4 +1,4 @@
 baseURL = 'https://utspeech.github.io/'
 languageCode = 'en-ca'
 title = 'University of Toronto Speech Group'
-theme = 'ananke'
+theme = 'winning'
