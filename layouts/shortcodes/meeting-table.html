@@ -1,0 +1,34 @@
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Speaker</th>
+    <th>Affiliation</th>
+    <th>Title/Link</th>
+  </tr>
+  {{ range sort .Site.Data.meetings "date" "desc" }}
+    <tr>
+      <td>
+        {{ dateFormat "January 2, 2006" .date }}
+      </td>
+      <td>
+        {{ if ne .website nil }}
+          <a href="{{ .website }}">
+        {{ end }}
+        {{ .speaker | safeHTML }}
+        {{ if ne .website nil }}
+          </a>
+        {{ end }}
+      </td>
+      <td>
+        {{ .affiliation | safeHTML }}
+      </td>
+      <td>
+        {{ if ne .link nil }}
+          <a href="{{ .website }}">
+            {{ default "Link" .title | safeHTML }}
+          </a>
+        {{ end }}
+      </td>
+    </tr>
+  {{ end }}
+</table>

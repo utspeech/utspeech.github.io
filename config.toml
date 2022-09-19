@@ -14,3 +14,7 @@ theme = ['osm', 'hugo-cloak-email', 'beautifulhugo']
 [[menu.main]]
   name = 'Join Us'
   url = 'page/join'
+
+[[menu.main]]
+  name = 'Archive'
+  url = 'page/archive'
