@@ -27,6 +27,8 @@
           <a href="{{ .website }}">
             {{ default "Link" .title | safeHTML }}
           </a>
+        {{ else }}
+          {{ .title | safeHTML }}
         {{ end }}
       </td>
     </tr>
