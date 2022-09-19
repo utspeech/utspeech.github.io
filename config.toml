@@ -1,4 +1,16 @@
 baseURL = 'https://utspeech.github.io/'
 languageCode = 'en-ca'
 title = 'University of Toronto Speech Group'
-theme = 'winning'
+theme = ['osm', 'hugo-cloak-email', 'beautifulhugo']
+
+[Params]
+  useHLJS = true
+  mainSections = ['post']
+
+[[menu.main]]
+  name = 'Team'
+  url = 'page/team'
+
+[[menu.main]]
+  name = 'Join Us'
+  url = 'page/join'

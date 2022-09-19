@@ -1,0 +1,9 @@
+[submodule "themes/beautifulhugo"]
+	path = themes/beautifulhugo
+	url = https://github.com/halogenica/beautifulhugo.git
+[submodule "themes/hugo-cloak-email"]
+	path = themes/hugo-cloak-email
+	url = https://github.com/martignoni/hugo-cloak-email.git
+[submodule "themes/osm"]
+	path = themes/osm
+	url = https://github.com/Hanzei/hugo-component-osm.git
