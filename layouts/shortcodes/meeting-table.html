@@ -23,8 +23,12 @@
         {{ .affiliation | safeHTML }}
       </td>
       <td>
-        {{ if ne .link nil }}
-          <a href="{{ .website }}">
+        {{ if ne .archive nil }}
+          <a href="{{ .archive }}">
+            {{ default "Link" .title | safeHTML }}
+          </a>
+        {{ else if ne .zoom nil }}
+          <a href="{{ .zoom }}">
             {{ default "Link" .title | safeHTML }}
           </a>
         {{ else }}
