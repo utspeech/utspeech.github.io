@@ -1,0 +1,8 @@
+{{ $tableStyles := resources.Get "css/table.css" | resources.Minify | resources.Fingerprint }}
+<link
+  rel="stylesheet"
+  href="{{ $tableStyles.RelPermalink }}"
+  integrity="{{ $tableStyles.Data.Integrity }}"
+  crossorigin="anonymous"
+  media="screen"
+/>
