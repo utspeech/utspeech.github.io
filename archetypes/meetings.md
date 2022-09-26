@@ -14,10 +14,11 @@ speakers: {{ index $speaker 0 }}  # speaker id
 date: {{ $date }}  # date of talk
 publishDate: {{ .Date }}
 time: "10:30"  # Time of talk (HH:MM 24-hr)
+zoom:  # Zoom link goes here (if available)
+archive:  # Archived video link goes here (if different from Zoom link)
 abstract: >
     Multiline abstract
     goes here
-zoom:  # Zoom link goes here (if available)
-archive:  # Archived video link goes here (if different from Zoom link)
 draft: true  # remove when ready to publish
 ---
+<!-- Content here will show up after meeting details and before abstract -->

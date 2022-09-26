@@ -11,7 +11,7 @@
             <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapse{{ $value.Name }}" data-parent="#accordion">
                 <div class="panel-heading" id="header{{ $value.Name }}">
                   <h4 class="panel-title">
-                      {{ $value.Page.Params.Name | safeHTML }}
+                      {{- $value.Page.Params.Name -}}
                     <span class="badge">{{ $value.Count }}</span>
                   </h4>
                 </div>

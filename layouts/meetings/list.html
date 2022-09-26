@@ -12,14 +12,14 @@
             {{ with .Params }}
             <li>
                 {{ default (i18n "dateFormat") .Site.Params.dateformat | .Date.Format }}.
-                <a href="{{ $.Site.LanguagePrefix | absURL }}/speakers/{{ .speakers | urlize }}/">{{ (index $.Site.Taxonomies.speakers .speakers).Page.Params.name | safeHTML }}.</a>
+                <a href="{{ $.Site.LanguagePrefix | absURL }}/speakers/{{ .speakers | urlize }}/">{{ (index $.Site.Taxonomies.speakers .speakers).Page.Params.name }}.</a>
                 <em>
                     {{ if ne .archive nil }}
                         <a href="{{ .archive | absURL }}">
                     {{ else if ne .zoom nil }}
                         <a href="{{ .zoom | absURL }}">
                     {{ end }}
-                    {{ .title | safeHTML }}.
+                    {{ .title }}.
                     {{ if or (ne .archive nil) (ne .zoom nil) }}</a>{{ end }}
                 </em>
             </li>

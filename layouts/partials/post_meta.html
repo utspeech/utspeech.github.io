@@ -11,7 +11,7 @@
     {{ if not .Site.Params.hideAuthor }}
         &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;
         <a href="{{ $.Site.LanguagePrefix | absURL }}/speakers/{{ .Params.speakers | urlize }}/">
-            {{- (index $.Site.Taxonomies.speakers .Params.speakers).Page.Params.name | safeHTML -}}
+            {{- (index $.Site.Taxonomies.speakers .Params.speakers).Page.Params.name -}}
         </a>
     {{ end }}
     {{- if .Site.Params.staticman -}}
