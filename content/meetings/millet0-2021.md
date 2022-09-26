@@ -1,8 +1,7 @@
-speaker: Juliette Millet
-website: https://jamju.github.io/
+---
+speakers: millet0
 date: 2021-10-07
 title: "Predicting non-native speech perception using the Perceptual Assimilation Model and state-of-the-art acoustic models"
-affiliation: Université de Paris
 abstract: >
   Our  native  language  influences  the  way  we  perceive  speech  sounds,
   affecting  our  ability to  discriminate  non-native  sounds.   We  compare
@@ -24,3 +23,4 @@ abstract: >
   provides a good model of low-level phonetic representations, supporting the
   idea that both  categorical  and  fine-grained  perception are used during
   speech perception.
+---

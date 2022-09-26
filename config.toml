@@ -3,18 +3,21 @@ languageCode = 'en-ca'
 title = 'University of Toronto Speech Group'
 theme = ['osm', 'hugo-cloak-email', 'beautifulhugo']
 
+[taxonomies]
+  speaker = 'speakers'
+
 [Params]
   useHLJS = true
-  mainSections = ['post']
-
-[[menu.main]]
-  name = 'Team'
-  url = 'page/team'
+  mainSections = ['meetings']
 
 [[menu.main]]
   name = 'Join Us'
   url = 'page/join'
 
 [[menu.main]]
-  name = 'Archive'
-  url = 'page/archive'
+  name = 'Meetings'
+  url = 'meetings'
+
+[[menu.main]]
+  name = 'Speakers'
+  url = 'speakers'

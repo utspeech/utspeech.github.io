@@ -1,8 +1,7 @@
-speaker: Thomas St. Pierre
-website: http://individual.utoronto.ca/tstpierre/home.html
+---
+speakers: st-pierre0
 date: 2021-11-18
 title: Children's language attitudes and media
-affiliation: Psychology
 abstract: >
   Throughout their daily lives, listeners routinely make inferences about
   others based on how they speak (e.g., their age, gender, SES, etc.). In many
@@ -14,3 +13,4 @@ abstract: >
   they get older-actually increase, as well as ongoing work looking at the
   possible role of media in both shaping children's language attitudes and
   mitigating linguistic biases.
+---

@@ -1,5 +1,5 @@
-speaker: Félix Desmeules-Trudel
-website: https://felixdtrudel.github.io/
+---
+speakers: desmeules-trudel0
 date: 2021-04-08
 title: "From variability in production to learning words in a second language: The importance of phonetic details"
-affiliation: Psychology
+---

@@ -1,8 +1,7 @@
-speaker: Chandan Narayan
-website: https://www.chandannarayan.com/
+---
+speakers: narayan0
 date: 2021-05-06
-title: "Burst amplitude is affected by speaking rate: Cross-linguistic observations and implications."
-affiliation: LLL (York)
+title: "Burst amplitude is affected by speaking rate: Cross-linguistic observations and implications"
 abstract: >
   The relationship between speaking rate and burst amplitude in voiceless
   plosives was investigated in two languages with differing oro-laryngeal
@@ -15,3 +14,4 @@ abstract: >
   it was most pronounced in English, owing to its short-lag oro-laryngeal
   timing configuration. Implications for speech perception and sound change are
   discussed.
+---

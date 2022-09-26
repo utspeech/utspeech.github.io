@@ -1,4 +1,5 @@
-speaker: Sean Robertson
+---
+name: Sean Robertson
 website: https://www.cs.toronto.edu/~sdrobert/
-date: 2021-03-11
 affiliation: Computer Science
+---

@@ -1,8 +1,7 @@
-speaker: Emily Blamire
-website: https://www.linguistics.utoronto.ca/people/directories/graduate-students/emily-blamire
+---
+speakers: blamire0
 date: 2022-04-07
 time: "10:30"
-affiliation: Linguistics
 zoom: https://utoronto.zoom.us/rec/share/j6sIhvsD5b7eNJLJbBkxgjJDBac-WcE2x6sWpPqj1WVSRX9FlwBTbxsuqel_ZF6B.PHwaPA_ZXykNQhvP
 title: Linguistic and social factors of Voice Recognition
 abstract: >
@@ -47,3 +46,4 @@ abstract: >
   equal accuracy when listening to both sets of voices.  Suggestions for how to
   interpret these results with Johnson et al. (2018)'s findings and the planned
   next experiment to further explore this issue will be discussed.  
+---
