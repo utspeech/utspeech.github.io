@@ -13,11 +13,11 @@
                 {{ end }}
             </small>
         {{ end }}
-        {{ with .Content }}
-          <div class="well">
-            {{.}}
-          </div>
+        
+        {{ if ne .Content nil }}
+            <p>{{- .Content -}}</p>
         {{ end }}
+
         <div class="posts-list">
           {{ range .Paginator.Pages }}
             {{ partial "post_preview.html" .}}
