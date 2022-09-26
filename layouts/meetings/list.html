@@ -19,7 +19,7 @@
                     {{ else if ne .zoom nil }}
                         <a href="{{ .zoom | absURL }}">
                     {{ end }}
-                    {{ default "Untitled" .title | safeHTML }}.
+                    {{ .title | safeHTML }}.
                     {{ if or (ne .archive nil) (ne .zoom nil) }}</a>{{ end }}
                 </em>
             </li>
