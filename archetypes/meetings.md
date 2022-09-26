@@ -9,7 +9,7 @@
     {{- errorf "Speaker %s has not been created in content/speakers/ yet!\n" $speaker -}}
 {{- end -}}
 ---
-title: Title goes here  # meeting title
+title: "Title goes here: Subtitle here"
 speakers: {{ index $speaker 0 }}  # speaker id
 date: {{ $date }}  # date of talk
 publishDate: {{ .Date }}
