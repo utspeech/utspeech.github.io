@@ -2,21 +2,28 @@
   <div class="container" role="main">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        {{ with .Params}}
+            <h1>{{ .Name }}</h1>
+            <small>
+                {{ if ne .affiliation nil }}
+                    <em>{{ .affiliation -}}</em><br>
+                {{ end }}
+                {{ if ne .website nil }}
+                    <i class="fas fa-external-link-alt"></i>&nbsp;<a href="{{ .website | absURL }}">Webpage</a><br>
+                {{ end }}
+            </small>
+        {{ end }}
         {{ with .Content }}
           <div class="well">
             {{.}}
           </div>
         {{ end }}
-        <ul class="posts-list">
+        <div class="posts-list">
           {{ range .Paginator.Pages }}
-            <li>
-                {{ default (i18n "dateFormat") .Site.Params.dateformat | .Date.Format }}.
-                <a href="{{ $.Site.LanguagePrefix | absURL }}/speakers/{{ .Params.speakers | urlize }}/">{{ (index $.Site.Taxonomies.speakers .Params.speakers).Page.Params.name }}.</a>
-                <a href="{{ .Permalink }}"><em>{{ .Params.title }}.</em></a>
-            </li>
+            {{ partial "post_preview.html" .}}
           {{ end }}
-        </ul>
-        <!-- {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
+        </div>
+        {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
           <ul class="pager main-pager">
             {{ if .Paginator.HasPrev }}
               <li class="previous">
@@ -29,7 +36,7 @@
               </li>
             {{ end }}
           </ul>
-        {{ end }} -->
+        {{ end }}
       </div>
     </div>
   </div>

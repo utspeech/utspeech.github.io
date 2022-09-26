@@ -8,10 +8,10 @@
     {{ if ne $datestr $lastmodstr }}
       &nbsp;{{ $lastmodstr | i18n "lastModified"  }}
     {{ end }}
-    {{ if not .Site.Params.hideAuthor }}
+    {{ if and (not .Site.Params.hideAuthor) (ne .Params.speakers nil) }}
         &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;
         <a href="{{ $.Site.LanguagePrefix | absURL }}/speakers/{{ .Params.speakers | urlize }}/">
-            {{- (index $.Site.Taxonomies.speakers .Params.speakers).Page.Params.name -}}
+            {{- (index .Site.Taxonomies.speakers .Params.speakers).Page.Params.Name -}}
         </a>
     {{ end }}
     {{- if .Site.Params.staticman -}}

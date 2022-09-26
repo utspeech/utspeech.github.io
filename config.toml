@@ -12,7 +12,7 @@ theme = ['osm', 'hugo-cloak-email', 'beautifulhugo']
 
 [[menu.main]]
   name = 'Join Us'
-  url = 'page/join'
+  url = 'join'
 
 [[menu.main]]
   name = 'Meetings'

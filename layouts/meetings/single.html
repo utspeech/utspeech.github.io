@@ -1,11 +1,9 @@
 {{ define "main" }}
 {{- $present := "will present" -}}
 {{- $be := "will be" -}}
-{{- $meeting_info := "" -}}
 {{- if le .Date .PublishDate -}}
     {{ $present = "presented" }}
     {{ $be = "was" }}
-    {{ $meeting_info = "Please consult the <a href=\"{{ $.Site.LanguagePrefix | absURL }}/join\">Join Us</a> page for more details on attending online or in-person." | safeHTML }}
 {{- end -}}
 <div class="container" role="main">
   <div class="row">
@@ -14,25 +12,22 @@
         <p>
             On {{ default (i18n "dateFormat") .Site.Params.dateformat | .Date.Format }}
             {{- if ne .Params.time nil }}
-                at {{ .Params.time | safeHTML }}
+                at {{ .Params.time }}
             {{- end -}},
             <a href="{{ $.Site.LanguagePrefix | absURL }}/speakers/{{ .Params.speakers | urlize }}/">
                 {{- (index $.Site.Taxonomies.speakers .Params.speakers).Page.Params.name -}}
-            </a> {{ $present }} <q>{{- .Params.Title | safeHTML -}}.</q>
+            </a> {{ $present }} <q>{{- .Params.Title -}}.</q>
         </p>
 
         {{- if ne .Params.archive nil }}
             <p>
                 The presentation has been archived <a href="{{ .Params.archive | absURL}}">here</a>.
-                {{- $meeting_info -}}
             </p>
         {{- else if ne .Params.zoom nil }}
             <p>
                 The Zoom link for the meeting is <a href="{{ .Params.zoom | absURL }}">here</a>.
                 The password {{ $be }} distributed through the mailing list.
             </p>
-        {{- else if ne $meeting_info "" }}
-            <p>{{ $meeting_info }}</p>
         {{- end }}
 
         {{ .Content }}
