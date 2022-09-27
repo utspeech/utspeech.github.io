@@ -13,7 +13,7 @@ title: "Title goes here: Subtitle here"
 speakers: {{ index $speaker 0 }}  # speaker id
 date: {{ $date }}  # date of talk
 publishDate: {{ .Date }}
-time: "10:30"  # Time of talk (HH:MM 24-hr)
+time: "13:30"  # Time of talk (HH:MM 24-hr)
 zoom:  # Zoom link goes here (if available)
 archive:  # Archived video link goes here (if different from Zoom link)
 abstract: >
