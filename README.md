@@ -55,6 +55,4 @@ in the `content/meetings/<meeting_id>.md` file, commit, and push.
 
 ## To-Do
 
-- Default times via `config.toml`.
 - Mugshots.
-- Figure out whether we're archiving anything once Zoom is done with it.

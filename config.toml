@@ -7,6 +7,8 @@ theme = ['osm', 'hugo-cloak-email', 'beautifulhugo']
   speaker = 'speakers'
 
 [Params]
+  enableRobotsTXT = true
+  defaultMeetingTime = "13:30"
   useHLJS = true
   mainSections = ['meetings']
 
