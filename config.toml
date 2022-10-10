@@ -8,18 +8,32 @@ theme = ['osm', 'hugo-cloak-email', 'beautifulhugo']
 
 [Params]
   enableRobotsTXT = true
-  defaultMeetingTime = "13:30"
+  defaultMeetingTime = '13:30'
   useHLJS = true
   mainSections = ['meetings']
 
 [[menu.main]]
   name = 'Join Us'
   url = 'join'
+  weight = 1
 
 [[menu.main]]
-  name = 'Meetings'
+  identifier = 'schedule'
+  name = 'Schedule'
+  weight = 2
+
+[[menu.main]]
+  parent = 'schedule'
+  name = 'Fall 2022-Winter 2023'
+  url = 'sched2022-2023'
+  weight = 1
+
+[[menu.main]]
+  name = 'Archive'
   url = 'meetings'
+  weight = 3
 
 [[menu.main]]
   name = 'Speakers'
   url = 'speakers'
+  weight = 4

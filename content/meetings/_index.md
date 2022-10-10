@@ -1,4 +1,4 @@
 ---
-title: Meetings
+title: Meeting Archive
 type: page
 ---
