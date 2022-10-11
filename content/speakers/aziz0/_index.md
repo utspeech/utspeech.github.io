@@ -1,6 +1,7 @@
 ---
 name: Jacob Aziz
-affiliation:  UCLA
+affiliation: UCLA
+website: https://sites.google.com/g.ucla.edu/jakeaziz/
 ---
 
 Jake is a Ph.D. Candidate at UCLA who works on all things phonology and all
