@@ -1,6 +1,10 @@
 # For Ewan, with love
 .DS_Store
 
+# For vim
+*.swp
+*.swo
+
 # Generated files by hugo
 /public/
 /resources/_gen/
