@@ -7,4 +7,4 @@ presenters from all three campuses as well as external presenters.
 
 Group meetings are organized by [Ewan Dunbar](http://individual.utoronto.ca/ewan_dunbar/),
 [Vanina Machado](https://www.spanport.utoronto.ca/people/directories/graduate-students/vanina-machado),
-and [Sean Robertson](https://www.cs.toronto.edu/~sdrobert).
+and [Sean Robertson](https://sdrobert.github.io/).
